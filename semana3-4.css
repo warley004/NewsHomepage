@@ -1,0 +1,244 @@
+body{
+    margin: 0px;
+    background-image: url(bg-main-desktop.png);
+    background-repeat: no-repeat;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(278, 68%, 11%);
+    display: flex;
+}
+
+#flexBox1{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 150px;   
+}
+
+.cardImages{
+    width: 550px;
+    height: 540px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardImages img{
+    width: 447px;
+    height: 245px;
+}
+
+.cardImages svg{
+    position: absolute;
+    top: 25px;
+    left: 35px;
+}
+
+.cardImages #cardNumberDisplay{
+    position: absolute;
+    top: 140px;
+    left: 35px;
+    font-size: 30px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+
+.cardImages #cardholderNameDisplay{
+    position: absolute;
+    top: 200px;
+    left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+
+.cardImages #expMMDisplay{
+    position: absolute;
+    top: 200px;
+    left: 355px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+
+.cardImages #expYYDisplay{
+    position: absolute;
+    top: 200px;
+    left: 390px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+
+.cardImages #cardSlash{
+    position: absolute;
+    top: 200px;
+    left: 380px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+}
+.cardImages #cvcDisplay{
+    position: absolute;
+    top: 404px;
+    left: 455px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(270, 3%, 87%);
+
+}
+
+#cardBack{
+    align-self: flex-end;
+}
+
+.formulario{
+    margin-left: 120px;
+    width: 500px;
+}
+
+form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#CARDHOLDER{
+    display: flex;
+    flex-direction: column;
+}
+
+#CARDHOLDER input{
+    height: 40px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding-left: 15px;
+    border-radius: 0.45em;
+}
+
+#CARDHOLDER p{
+    margin-bottom: 5px;
+}
+
+#CARDNUMBER{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#CARDNUMBER input{
+    height: 40px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding-left: 15px;
+    border-radius: 0.45em;
+}
+
+#CARDNUMBER p{
+    margin-bottom: 5px;
+}
+
+#lastInformations{
+    display: flex;
+    flex-direction: row;
+}
+
+#expDate{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#expDate p{
+    margin-bottom: 5px;
+}
+
+#MMandYY{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#MM{
+    width: 55px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding-left: 15px;
+    border-radius: 0.45em;
+}
+
+#YY{
+    width: 55px;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding-left: 15px;
+    border-radius: 0.45em;
+}
+
+#cvc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 318.8px;
+    margin-top: 10px;
+}
+
+#cvc p{
+    margin-bottom: 5px;
+}
+
+#cvcInput{
+    height: 40px;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding-left: 15px;
+    border-radius: 0.45em;
+}
+
+button{
+    width: 500px;
+    height: 60px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: 0.45em;
+    border: none;
+    color: hsl(270, 3%, 87%);
+    background-color: hsl(278, 68%, 11%);
+    transition: all 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em -0.4em hsl(279, 73%, 23%);
+    transform: translateY(-0.2em);
+}
+
+input{
+    border: 2px solid hsl(270, 3%, 87%);
+    color: hsl(278, 68%, 11%);
+}
+
+input:hover{
+    border-color: hsl(278, 68%, 11%);
+    cursor: pointer;
+
+}
+
+input::-webkit-input-placeholder {
+    color: hsl(270, 3%, 87%)
+}
+
+
+
+
+
+
+
+
