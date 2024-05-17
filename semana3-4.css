@@ -235,10 +235,109 @@ input::-webkit-input-placeholder {
     color: hsl(270, 3%, 87%)
 }
 
+@media (min-width: 375px) and (max-width: 1024px) {
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 42.5%;
+        background-image: url(bg-main-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        transform: rotate(180deg);
+        z-index: -1; 
+    }
 
+    body {
+        background-image: none; 
+    }
 
+    #flexBox1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 5%;
+        height: auto;
+    }
 
+    .cardImages{
+        width: 540px;
+        height: 450px;
+        position: relative;
+        display: flex;
+    }
 
+    .cardImages img{
+        position: relative;    
+    }
 
+    #cardBack{
+        order: -1;
+        position: relative;
+        z-index: 1;
+    }
 
+    #cardFront{
+        order: 1;
+        position: absolute;
+        top: 31%;
+        right: 20%;
+        z-index: 1;
+        
+    }
+
+    .cardImages #cardNumberDisplay{
+        position: absolute;
+        top: 60%;
+        z-index: 2;
+        
+    }
+
+    .cardImages #cardholderNameDisplay{
+        position: absolute;
+        top: 73%; 
+        z-index: 2;
+    }
+
+    #formContainer{
+        position: relative;
+        top: 0%;
+    }
+
+    .cardImages #cardSlash{
+        position: absolute;
+        top: 73%;
+        z-index: 2;
+    }
+
+    .cardImages #expMMDisplay{
+        position: absolute;
+        top: 73%;
+        z-index: 2;
+    }
+
+    .cardImages #expYYDisplay{
+        position: absolute;
+        top: 73%;
+        z-index: 2;
+    }
+
+    .cardImages svg{
+        position: absolute;
+        height: 50px;
+        top: 40%;
+        z-index: 2;
+    }
+
+    .cardImages #cvcDisplay{
+        position: absolute;
+        top: 24.3%;
+        z-index: 2;
+    }
+
+    
+}
 
